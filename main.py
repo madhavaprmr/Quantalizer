@@ -167,7 +167,7 @@ def user_input(CIRCUIT, key):
   # Initialize and define the properties of the window
   get_input = tkinter.Tk()
   get_input.title("θ")
-  get_input.geometry("360x140")
+  get_input.geometry("360x88")
   get_input.resizable(0, 0)
 
   val1 = tkinter.Button(get_input, height = 2, width = 10, bg = buttons, font = ("Arial", 10), text = "π/4", command = lambda: change_theta(0.25, get_input, CIRCUIT, key))
@@ -193,15 +193,6 @@ def user_input(CIRCUIT, key):
   
   nval4 = tkinter.Button(get_input, height = 2, width = 10, bg = buttons, font = ("Arial", 10), text = "-2π", command = lambda: change_theta(-2, get_input, CIRCUIT, key))
   nval4.grid(row = 1, column = 3, sticky = "W")
-
-  text_object = tkinter.Text(get_input, height = 20, width = 20, bg = "light cyan")
-
-  note = """
-  θ: [-2π, 2π]
-  """
-
-  text_object.grid(sticky = "WE", columnspan = 4)
-  text_object.insert(END, note)
   
 # Define Frames
 display_frame = tkinter.LabelFrame(root)
