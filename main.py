@@ -242,7 +242,7 @@ quit.grid(row = 4, column = 0, columnspan = 2, sticky = "WE", ipadx = 5, pady = 
 visualize.grid(row = 4, column = 2, columnspan = 1, sticky = "WE", ipadx = 8, pady = 1)
 
 # Define Clear Button
-clear_button = tkinter.Button(button_frame, font = button_font, bg = clear_bg, text = "Clear", command = lambda: CIRCUIT)
+clear_button = tkinter.Button(button_frame, font = button_font, bg = clear_bg, text = "Clear", command = lambda: clear(CIRCUIT))
 clear_button.grid(row = 5, column = 0, columnspan = 3, sticky = "WE")
 
 # Define About Button
